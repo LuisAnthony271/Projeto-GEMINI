@@ -1,0 +1,47 @@
+.blue {
+    background: linear-gradient(
+      270deg,
+      var(--darkblue),
+      var(--blue),
+      var(--lightblue),
+      var(--darkblue),
+      var(--blue),
+      var(--lightblue),
+      var(--darkblue)
+    );
+    border-radius: 50px;
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    line-height: 1.5;
+    padding: 12px 25px;
+    background-origin: border-box;
+    background-clip: border-box;
+    background-size: 600% 600%;
+    background-position: 0% 50%;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-position 0.4s ease;
+    will-change: background-position;
+  }
+  
+  .blue:hover {
+    animation: moveGradientContinuous 10s linear infinite;
+  }
+  
+  @keyframes moveGradientContinuous {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+  @media(max-width:600px) {
+  
+    .blue {
+      font-size: 1rem;
+    }
+  }
