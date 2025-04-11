@@ -6,7 +6,7 @@ import Gemini from '../../assets/gemini-text.png'
 import { useEffect } from 'react';
 
 
-const hero = () => {
+const Hero = () => {
 
   const isMobile = window.matchMedia("(max-width: 600px)").matches;
 
@@ -57,4 +57,4 @@ const hero = () => {
   )
 }
 
-export default hero;
+export default Hero;

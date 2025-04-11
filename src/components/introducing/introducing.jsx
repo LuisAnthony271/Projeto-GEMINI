@@ -9,78 +9,100 @@ import { useEffect } from 'react';
 
 const Introducing = () => {
 
-    useEffect(() => {
-      const reveals = document.querySelectorAll('.reveal');
-    
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-          }
-        });
+  const isMobile = window.matchMedia("(max-width: 600px)").matches;
+
+  useEffect(() => {
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        const target = entry.target;
+
+        if (entry.isIntersecting) {
+          // Stagger effect: cada elemento tem seu próprio delay baseado no index
+          target.style.transitionDelay = `${index * 100}ms`; // 0.1s entre elementos
+          target.classList.add('active');
+          target.classList.remove('inactive');
+        } else {
+          target.style.transitionDelay = '0ms'; // remove o delay na saída
+          target.classList.remove('active');
+          target.classList.add('inactive');
+        }
       });
-    
-      reveals.forEach(reveal => observer.observe(reveal));
-    
-      return () => observer.disconnect();
-    }, []);
+    }, {
+      threshold: isMobile ? 0.1 : 0.2, // Mais sensível pra mobile, um pouco maior pra desktop
+      rootMargin: isMobile ? "0px 0px -15% 0px" : "0px 0px -10% 0px", // Antecipar no mobile
+    });
+
+    const reveals = document.querySelectorAll('.reveal');
+    reveals.forEach(reveal => observer.observe(reveal));
+
+    return () => {
+      reveals.forEach(reveal => observer.unobserve(reveal));
+    };
+  }, []);
 
   return (
-    <section className={`${styles.introducing} reveal`}>
+    <section className={styles.introducing}>
       <img src={BackgroundGemini} alt="background" className={styles.introBackground} />
-        <div className={styles.introWrapper}>
-          <div className={styles.introContent}>
-            <h2 className={styles.h2Intro}>
-                O que é o 
-            </h2>
-            <h1 className={styles.h1Intro}>Gemini?</h1>
-          </div>
-            <p className={styles.pIntro}>
-            O Gemini é o mais recente e avançado modelo de inteligência artificial generativa desenvolvido pelo Google. Ele representa um salto significativo nas capacidades dos sistemas de IA, sendo capaz de entender e gerar texto, imagens, áudio e vídeo. O Gemini serve como base para diversos produtos e aplicações do Google, incluindo o assistente pessoal Gemini e ferramentas para desenvolvedores. Ele se destaca por sua multimodalidade e capacidade de lidar com tarefas complexas, buscando superar até mesmo especialistas humanos em certos benchmarks.
-            </p>
-            <div className={styles.btnIntro}>
-                {/* <Blue> Saiba Mais</Blue> */}
-                <Black>Saiba Mais</Black>
-            </div>
-            <div className={styles.cardWrapper}>
-              <div className={styles.cardContainer}>
-                
-                <div className={styles.card}>
-                    <div className={styles.cardContent}>
-                      <img src={Personal} alt="" className={styles.imgCard} />
-                        <div className={styles.cardText}>
-                          <h3 className={styles.h3Card}>Assitente pessoal</h3>
-                          <p className={styles.pCard}>Responder perguntas complexas, fornecer resumos, ajudar na escrita de e-mails e documentos, traduzir idiomas em tempo real, planejar viagens e eventos.</p>
-                          <Black>Saiba mais</Black>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className={styles.card}>
-                  <div className={styles.cardContent}>
-                    <img src={Content} alt="" className={styles.imgCard} />
-                    <div className={styles.cardText}>
-                      <h3 className={styles.h3Card}>Criação de conteúdo</h3>
-                      <p className={styles.pCard}>Gerar textos criativos, como poemas, roteiros e peças musicais, criar legendas para redes sociais, auxiliar no brainstorming de ideias.</p>
-                      <Black>Saiba mais</Black>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className={styles.card}>
-                  <div className={styles.cardContent}>
-                    <img src={Robo} alt="" className={styles.imgCard} />
-                      <div className={styles.cardText}>
-                        <h3 className={styles.h3Card}>Integração</h3>
-                        <p className={styles.pCard}>Integrar o Gemini em sistemas robóticos para permitir um entendimento mais rico do ambiente e uma interação mais natural com humanos.</p>
-                        <Black>Saiba mais</Black>
-                      </div>
-                  </div>
+      <div className={styles.introWrapper}>
+
+        {/* Título */}
+        <div className={`${styles.introContent} reveal`}>
+          <h2 className={styles.h2Intro}>O que é o</h2>
+          <h1 className={styles.h1Intro}>Gemini?</h1>
+        </div>
+
+        {/* Parágrafo */}
+        <p className={`${styles.pIntro} reveal`}>
+          O Gemini é o mais recente e avançado modelo de inteligência artificial generativa desenvolvido pelo Google. Ele representa um salto significativo nas capacidades dos sistemas de IA, sendo capaz de entender e gerar texto, imagens, áudio e vídeo. O Gemini serve como base para diversos produtos e aplicações do Google, incluindo o assistente pessoal Gemini e ferramentas para desenvolvedores. Ele se destaca por sua multimodalidade e capacidade de lidar com tarefas complexas, buscando superar até mesmo especialistas humanos em certos benchmarks.
+        </p>
+
+        {/* Botão */}
+        <div className={`${styles.btnIntro} reveal`}>
+          <Black>Saiba Mais</Black>
+        </div>
+
+        {/* Cards */}
+        <div className={styles.cardWrapper}>
+          <div className={styles.cardContainer}>
+
+            <div className={`${styles.card} reveal`}>
+              <div className={styles.cardContent}>
+                <img src={Personal} alt="" className={styles.imgCard} />
+                <div className={styles.cardText}>
+                  <h3 className={styles.h3Card}>Assitente pessoal</h3>
+                  <p className={styles.pCard}>Responder perguntas complexas, fornecer resumos, ajudar na escrita de e-mails e documentos, traduzir idiomas em tempo real, planejar viagens e eventos.</p>
+                  <Black>Saiba mais</Black>
                 </div>
               </div>
-
             </div>
+
+            <div className={`${styles.card} reveal`}>
+              <div className={styles.cardContent}>
+                <img src={Content} alt="" className={styles.imgCard} />
+                <div className={styles.cardText}>
+                  <h3 className={styles.h3Card}>Criação de conteúdo</h3>
+                  <p className={styles.pCard}>Gerar textos criativos, como poemas, roteiros e peças musicais, criar legendas para redes sociais, auxiliar no brainstorming de ideias.</p>
+                  <Black>Saiba mais</Black>
+                </div>
+              </div>
+            </div>
+
+            <div className={`${styles.card} reveal`}>
+              <div className={styles.cardContent}>
+                <img src={Robo} alt="" className={styles.imgCard} />
+                <div className={styles.cardText}>
+                  <h3 className={styles.h3Card}>Integração</h3>
+                  <p className={styles.pCard}>Integrar o Gemini em sistemas robóticos para permitir um entendimento mais rico do ambiente e uma interação mais natural com humanos.</p>
+                  <Black>Saiba mais</Black>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
+
+      </div>
     </section>
   )
 }
