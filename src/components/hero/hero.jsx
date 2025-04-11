@@ -32,7 +32,7 @@ const Hero = () => {
     return () => {
       reveals.forEach(reveal => observer.unobserve(reveal));
     };
-  }, []);
+  }, );
 
   return (
     <section className={`${styles.hero} reveal`}>

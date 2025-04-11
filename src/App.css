@@ -65,3 +65,21 @@ button, img, a, div {
   opacity: 1;
   transform: translateY(0);
 }
+
+@media(max-width:600px) {
+  body {
+    max-width: 500px;
+  }
+}
+
+@media(max-width:400px) {
+  body {
+    max-width: 300px;
+  }
+}
+
+@media(max-width:300px) {
+  body {
+    max-width: 270px;
+  }
+}

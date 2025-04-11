@@ -15,6 +15,10 @@
     padding: 5rem 0;
 }
 
+.backgroundWrapper {
+    opacity: 20%;
+}
+
 .introBackground {
     display: flex;
     margin: 0 auto;
@@ -22,8 +26,8 @@
     width: 100%;
     height: 1260px;
     z-index: -1;
-    opacity: 20%;
-    filter: blur(3px);
+    background: #000000;
+    /* filter: blur(3px); */
 }
 
 .introWrapper {
@@ -180,6 +184,7 @@
     .introBackground{
         height: auto;
         filter: blur(1px);
+        opacity: 40%;
     }
 
     .introWrapper {
@@ -202,7 +207,7 @@
 
     .cardContainer {
         flex-direction: column;
-        gap: 1px;
+        gap: 1rem;
     }
 
     .imgCard {
@@ -212,5 +217,11 @@
 
     .pCard {
         max-width: 25ch;
+    }
+}
+
+@media(max-width:400px) {
+    .introducing {
+        max-width: 300px;
     }
 }

@@ -13,6 +13,7 @@
 
 .hero {
     background: transparent;
+    position: relative;
 }
 
 .heroImg {
@@ -27,7 +28,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 10rem 0;
+    padding: 16rem 0;
 }
 
 .heroContent {
@@ -106,6 +107,12 @@
 
     .btnHero {
         display: none;
+    }
+}
+
+@media(max-width:400px) {
+    .hero {
+        max-width: 300px;
     }
 }
 

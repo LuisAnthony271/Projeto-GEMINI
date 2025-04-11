@@ -39,17 +39,19 @@ const Introducing = () => {
     return () => {
       reveals.forEach(reveal => observer.unobserve(reveal));
     };
-  }, []);
+  }, );
 
   return (
-    <section className={styles.introducing}>
-      <img src={BackgroundGemini} alt="background" className={styles.introBackground} />
-      <div className={styles.introWrapper}>
+    <section className={`${styles.introducing} reveal`}>
+      <div className={styles.backgroundWrapper}>
+        <img src={BackgroundGemini} alt="background" className={`${styles.introBackground} reveal`} />
+      </div>
+      <div className={`${styles.introWrapper} reveal`}>
 
         {/* Título */}
         <div className={`${styles.introContent} reveal`}>
-          <h2 className={styles.h2Intro}>O que é o</h2>
-          <h1 className={styles.h1Intro}>Gemini?</h1>
+          <h2 className={`${styles.h2Intro} reveal`}>O que é o</h2>
+          <h1 className={`${styles.h1Intro} reveal`}>Gemini?</h1>
         </div>
 
         {/* Parágrafo */}
@@ -63,37 +65,37 @@ const Introducing = () => {
         </div>
 
         {/* Cards */}
-        <div className={styles.cardWrapper}>
-          <div className={styles.cardContainer}>
+        <div className={`${styles.cardWrapper} reveal`}>
+          <div className={`${styles.cardContainer} reveal`}>
 
             <div className={`${styles.card} reveal`}>
-              <div className={styles.cardContent}>
-                <img src={Personal} alt="" className={styles.imgCard} />
-                <div className={styles.cardText}>
-                  <h3 className={styles.h3Card}>Assitente pessoal</h3>
-                  <p className={styles.pCard}>Responder perguntas complexas, fornecer resumos, ajudar na escrita de e-mails e documentos, traduzir idiomas em tempo real, planejar viagens e eventos.</p>
+              <div className={`${styles.cardContent} reveal`}>
+                <img src={Personal} alt="" className={`${styles.imgCard} reveal`} />
+                <div className={`${styles.cardText} reveal`}>
+                  <h3 className={`${styles.h3Card} reveal`}>Assitente pessoal</h3>
+                  <p className={`${styles.pCard} reveal`}>Responder perguntas complexas, fornecer resumos, ajudar na escrita de e-mails e documentos, traduzir idiomas em tempo real, planejar viagens e eventos.</p>
                   <Black>Saiba mais</Black>
                 </div>
               </div>
             </div>
 
             <div className={`${styles.card} reveal`}>
-              <div className={styles.cardContent}>
-                <img src={Content} alt="" className={styles.imgCard} />
-                <div className={styles.cardText}>
-                  <h3 className={styles.h3Card}>Criação de conteúdo</h3>
-                  <p className={styles.pCard}>Gerar textos criativos, como poemas, roteiros e peças musicais, criar legendas para redes sociais, auxiliar no brainstorming de ideias.</p>
+              <div className={`${styles.cardContent} reveal`}>
+                <img src={Content} alt="" className={`${styles.imgCard} reveal`} />
+                <div className={`${styles.cardText} reveal`}>
+                  <h3 className={`${styles.h3Card} reveal`}>Criação de conteúdo</h3>
+                  <p className={`${styles.pCard} reveal`}>Gerar textos criativos, como poemas, roteiros e peças musicais, criar legendas para redes sociais, auxiliar no brainstorming de ideias.</p>
                   <Black>Saiba mais</Black>
                 </div>
               </div>
             </div>
 
             <div className={`${styles.card} reveal`}>
-              <div className={styles.cardContent}>
-                <img src={Robo} alt="" className={styles.imgCard} />
-                <div className={styles.cardText}>
-                  <h3 className={styles.h3Card}>Integração</h3>
-                  <p className={styles.pCard}>Integrar o Gemini em sistemas robóticos para permitir um entendimento mais rico do ambiente e uma interação mais natural com humanos.</p>
+              <div className={`${styles.cardContent} reveal`}>
+                <img src={Robo} alt="" className={`${styles.imgCard} reveal`} />
+                <div className={`${styles.cardText} reveal`}>
+                  <h3 className={`${styles.h3Card} reveal`}>Integração</h3>
+                  <p className={`${styles.pCard} reveal`}>Integrar o Gemini em sistemas robóticos para permitir um entendimento mais rico do ambiente e uma interação mais natural com humanos.</p>
                   <Black>Saiba mais</Black>
                 </div>
               </div>
@@ -104,7 +106,7 @@ const Introducing = () => {
 
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Introducing
+export default Introducing;

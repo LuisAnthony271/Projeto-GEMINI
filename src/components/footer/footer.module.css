@@ -197,3 +197,9 @@
         align-items: flex-start;
     }
 }
+
+@media(max-width:400px) {
+    .footer {
+        max-width: 300px;
+    }
+}

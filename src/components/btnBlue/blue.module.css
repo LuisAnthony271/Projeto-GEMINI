@@ -27,7 +27,7 @@
   }
   
   .blue:hover {
-    animation: moveGradientContinuous 10s linear infinite;
+    animation: moveGradientContinuous 2s linear infinite;
   }
   
   @keyframes moveGradientContinuous {
