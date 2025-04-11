@@ -26,11 +26,12 @@
 
 .black {
   position: relative;
-  background: #131212;
+  background: var(--black);
   display: inline-block;
   border: none;
   border-radius: 50px;
-  padding: 10px 2rem;
+  align-content: center;
+  padding: 14px 2rem 16px;
   font-size: 1.25rem;
   font-weight: 400;
   letter-spacing: 0.25px;
