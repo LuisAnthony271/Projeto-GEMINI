@@ -169,8 +169,8 @@
   }
 }
 
-/* @media(max-width:400px) {
+@media(max-width:400px) {
   .Header {
-    max-width: 300px;
+    min-width: 400px;
   }
-} */
+}
