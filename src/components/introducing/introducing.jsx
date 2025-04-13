@@ -74,7 +74,10 @@ const Introducing = () => {
                 <div className={`${styles.cardText} reveal`}>
                   <h3 className={`${styles.h3Card} reveal`}>Assitente pessoal</h3>
                   <p className={`${styles.pCard} reveal`}>Responder perguntas complexas, fornecer resumos, ajudar na escrita de e-mails e documentos, traduzir idiomas em tempo real, planejar viagens e eventos.</p>
+                  <div className={styles.btnCardWrapper}>
                   <Black>Saiba mais</Black>
+
+                  </div>
                 </div>
               </div>
             </div>
@@ -85,7 +88,10 @@ const Introducing = () => {
                 <div className={`${styles.cardText} reveal`}>
                   <h3 className={`${styles.h3Card} reveal`}>Criação de conteúdo</h3>
                   <p className={`${styles.pCard} reveal`}>Gerar textos criativos, como poemas, roteiros e peças musicais, criar legendas para redes sociais, auxiliar no brainstorming de ideias.</p>
+                  <div className={styles.btnCardWrapper}>
                   <Black>Saiba mais</Black>
+
+                  </div>
                 </div>
               </div>
             </div>
@@ -96,7 +102,10 @@ const Introducing = () => {
                 <div className={`${styles.cardText} reveal`}>
                   <h3 className={`${styles.h3Card} reveal`}>Integração</h3>
                   <p className={`${styles.pCard} reveal`}>Integrar o Gemini em sistemas robóticos para permitir um entendimento mais rico do ambiente e uma interação mais natural com humanos.</p>
+                  <div className={styles.btnCardWrapper}>
                   <Black>Saiba mais</Black>
+
+                  </div>
                 </div>
               </div>
             </div>

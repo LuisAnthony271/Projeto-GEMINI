@@ -126,6 +126,12 @@
   color: var(--lightblue);
 }
 
+@media (max-width: 1000px) {
+  .RspnCards {
+    padding: 2rem 2rem 0;
+  }
+}
+
 @media (max-width: 600px) {
   .rspnContainer h2 {
     font-size: 32px;
@@ -176,8 +182,8 @@
   }
 }
 
-@media(max-width:400px) {
+/* @media(max-width:400px) {
   .Rspn {
     max-width: 300px;
   }
-}
+} */

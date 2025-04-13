@@ -134,6 +134,12 @@
   box-shadow: 0 6px 20px rgba(255, 0, 242, 0.8);
 }
 
+@media (max-width: 1000px) {
+  .techCardContainer {
+    padding: 2rem 2rem 0;
+  }
+}
+
 @media (max-width: 600px) {
   .techContainer {
     justify-content: center;
@@ -196,8 +202,8 @@
   }
 }
 
-@media(max-width:400px) {
+/* @media(max-width:400px) {
   .techSection {
     max-width: 300px;
   }
-}
+} */

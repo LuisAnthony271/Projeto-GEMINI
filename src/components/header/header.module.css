@@ -90,18 +90,18 @@
 @media (max-width: 600px) {
 
   .Header {
-    max-width: 500px;
+    /* max-width: 500px; */
     background:#00000048;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-bottom: 2px solid #d7d7d72c;
   }
 
-  .wrapperHeader {
-    /* padding-bottom: 1rem; */
+  /* .wrapperHeader {
+    padding-bottom: 1rem;
     
     max-width: 500px;
-  }
+  } */
 
   /* .backgroundWrapper .navBackground {
     display: block;
@@ -169,8 +169,8 @@
   }
 }
 
-@media(max-width:400px) {
+/* @media(max-width:400px) {
   .Header {
     max-width: 300px;
   }
-}
+} */

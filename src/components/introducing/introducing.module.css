@@ -154,10 +154,16 @@
 .cardText {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     gap: 2rem;
     padding: 0 2rem 3rem;
+}
+
+.btnCardWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .h3Card {
@@ -175,7 +181,27 @@
     letter-spacing: .3px;
 }
 
-@media(max-width:600px) {
+@media(max-width:1400px) {
+
+    .cardContainer {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:1000px) {
+
+    .cardContainer {
+        flex-direction: column;
+    }
+
+    .pIntro {
+        padding: 2rem 2rem 0
+    }
+
+}
+
+
+@media(max-width:750px) {
 
     .introducing {
         max-width: 600px;
@@ -193,11 +219,13 @@
 
     .introContent {
         flex-direction: column;
+        
     }
 
     .pIntro {
         max-width: 30ch;
         font-size: 1rem;
+        padding: 0 0;
     }
 
     .h1Intro,
@@ -220,8 +248,8 @@
     }
 }
 
-@media(max-width:400px) {
+/* @media(max-width:400px) {
     .introducing {
         max-width: 300px;
     }
-}
+} */
