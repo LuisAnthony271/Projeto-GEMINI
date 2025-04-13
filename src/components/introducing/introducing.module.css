@@ -142,7 +142,9 @@
 
 .imgCard {
     max-width: 450px;
-    height: 350px;
+    max-height: 350px;
+    width: auto;
+    height: auto;
     border-radius: 15px;
     position: relative;
     left: 0;
@@ -205,6 +207,7 @@
 
     .introducing {
         max-width: 600px;
+        width: auto;
     }
 
     .introBackground{
@@ -235,7 +238,8 @@
 
     .cardContainer {
         flex-direction: column;
-        gap: 1rem;
+        gap: 2rem;
+        margin: 0 auto;
     }
 
     .imgCard {

@@ -116,9 +116,9 @@
     }
 }
 
-@media(max-width:400px) {
+@media(max-width:300px) {
     .hero {
-        min-width: 400px;
+        min-width: 300px;
     }
 }
 
