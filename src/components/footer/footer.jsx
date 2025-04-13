@@ -1,7 +1,7 @@
 import styles from "./footer.module.css";
 import X from "../../assets/x.svg";
 import Insta from "../../assets/insta.svg";
-import Youtube from "../../assets/yt-logo.png";
+// import Youtube from "../../assets/yt-logo.png";
 import Linkedin from "../../assets/linkedin.png";
 import Github from "../../assets/github.svg";
 import Black from "../btnBlack/black";
@@ -33,13 +33,13 @@ const Footer = () => {
                 className={styles.socialMedia}
               />
             </a>
-            <a href="#" className={styles.aFooter}>
+            {/* <a href="#" className={styles.aFooter}>
               <img
                 src={Youtube}
                 alt="Youtube-logo"
                 className={styles.socialMedia}
               />
-            </a>
+            </a> */}
 
             <a href="#" className={styles.aFooter}>
               <img
