@@ -27,10 +27,7 @@ const Header = () => {
             alt=""
           />
         </button>
-        <nav className={menuActive ? styles.active: ""}>
-          {/* <div className={styles.backgroundWrapper}>
-            <img src={Background} alt="" className={styles.navBackground} />
-          </div> */}
+        <nav className={menuActive ? styles.active: ""}>  
           <ul className={styles.ulMenu}>
             <li>
               <a href="">Sobre</a>
@@ -48,20 +45,16 @@ const Header = () => {
             <a href="">
               <Search />
             </a>
-
             <a href="">
               <Sparkle />
             </a>
-            
           </div>
-
           </ul>
         </nav>
           <div className={styles.iconsHeaderActive}>
           <a href="">
               <Search />
             </a>
-
             <a href="">
               <Sparkle />
             </a>

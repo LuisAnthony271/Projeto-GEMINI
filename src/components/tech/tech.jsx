@@ -50,11 +50,11 @@ const Technologies = () => {
       <section className={withReveal(styles.techSection)}>
         <div className={withReveal(styles.wrapperTech)}>
           <div className={withReveal(styles.techContainer)}>
-            <h2 className="reveal">Tecnologias</h2>
-            <p className="reveal">Pesquisa inovadora. Produtos transformadores.</p>
+            <h2 className={withReveal(styles.techTitle) + ' ' + styles.reveal}>Tecnologias</h2>
+            <p className={withReveal(styles.techDescription) + ' ' + styles.reveal}>Pesquisa inovadora. Produtos transformadores.</p>
           </div>
           <div className={withReveal(styles.btnTech)}>
-            <a href="" className="reveal">Ver Todas as Tecnologias</a>
+            <a href="" className={withReveal(styles.btnBlack) + ' ' + styles.reveal}>Ver Todas as Tecnologias</a>
           </div>
           <div className={withReveal(styles.techCardContainer)}>
             <div className={withReveal(styles.Row)}>

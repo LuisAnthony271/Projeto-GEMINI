@@ -36,7 +36,7 @@ const Hero = () => {
 
   return (
     <section className={`${styles.hero} reveal`}>
-  <img src={Background} alt="background-img" className={`${styles.heroImg} reveal`} />
+  <img src={Background} alt="background-img" className={styles.heroImg} />
   <div className={`${styles.heroWrapper} reveal`}>
     <div className={`${styles.heroContent} reveal`}>
       <img src={Gemini} alt="Gemini-text-logo" className={`${styles.logoHero} reveal`} />

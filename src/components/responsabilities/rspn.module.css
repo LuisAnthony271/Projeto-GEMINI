@@ -26,6 +26,11 @@
 
 .wrapperRspn {
   padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .rspnContainer {
@@ -76,6 +81,7 @@
 
 .imgCard img {
   width: 100%;
+  max-width: 500px;
   height: 300px;
   object-fit: cover;
   border-radius: 16px 16px 0 0;

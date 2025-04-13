@@ -4,8 +4,9 @@ import Black from '../btnBlack/black'
 import Personal from '../../assets/personal-assistent.webp'
 import Content from '../../assets/content-creation.jpg'
 import Robo from '../../assets/robo.webp'
-import BackgroundGemini from '../../assets/gemini-bg-3.png'
+import BackgroundGemini from '../../assets/gemini-bg-4.png'
 import { useEffect } from 'react';
+
 
 const Introducing = () => {
 
