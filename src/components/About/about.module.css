@@ -22,10 +22,15 @@
     line-height: 1.5;
     text-align: justify;
     max-width: 70ch;
+    font-weight: 300;
 }
 
 @media (max-width: 900px) {
     .aboutWrapper h2 {
         font-size: 1.75rem;
+    }
+
+    .aboutWrapper p {
+        font-size: .875rem;
     }
 }
