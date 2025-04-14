@@ -3,6 +3,7 @@ import Icon from '../../assets/baixados.png'
 import { useEffect } from 'react';
 import Robot from '../../assets/robot_IA.png'
 import Button from '../btnBlack/black';
+import { Link } from 'react-router-dom';
 export default function Method() {
 
   const isMobile = window.matchMedia("(max-width: 600px)").matches;
@@ -54,7 +55,9 @@ export default function Method() {
                 O método de aprendizado usado pelo Gemini envolve técnicas avançadas de inteligência artificial, incluindo aprendizado de máquina e redes neurais. O sistema é projetado para processar grandes volumes de dados, permitindo que ele aprenda padrões e faça previsões com base nas informações que recebe. Além disso, Gemini pode se adaptar e melhorar continuamente seu desempenho à medida que é exposto a novos dados, tornando-o uma ferramenta poderosa para diversas aplicações. Se precisar de mais detalhes ou informações específicas, estou aqui para ajudar!
               </p>
               <div className="">
-                <Button>Saiba Mais</Button>
+                <Link to={'/Learn'}>
+                  <Button>Saiba Mais</Button>
+                </Link>
               </div>
             </div>
           </div>

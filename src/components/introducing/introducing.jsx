@@ -7,6 +7,7 @@ import Robo from '../../assets/robo.webp'
 import BackgroundGemini from '../../assets/gemini-bg-4.png'
 import { useEffect } from 'react';
 import { ArrowRight } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 
 const Introducing = () => {
@@ -64,7 +65,9 @@ const Introducing = () => {
 
         {/* Botão */}
         <div className={`${styles.btnIntro} reveal`}>
-          <Black>Saiba Mais</Black>
+          <Link to={'/About'}>
+            <Black>Saiba Mais</Black>
+          </Link>
         </div>
 
         {/* Cards */}
@@ -72,6 +75,7 @@ const Introducing = () => {
           <div className={`${styles.cardContainer} reveal`}>
 
             <div className={`${styles.card} reveal`}>
+            <Link to={'/Assistente'}>
               <div className={`${styles.cardContent} reveal`}>
                 <img src={Personal} alt="" className={`${styles.imgCard} reveal`} />
                 <div className={`${styles.cardText} reveal`}>
@@ -84,9 +88,11 @@ const Introducing = () => {
                   </div>
                 </div>
               </div>
+            </Link>
             </div>
 
             <div className={`${styles.card} reveal`}>
+              <Link to='/Create'>
               <div className={`${styles.cardContent} reveal`}>
                 <img src={Content} alt="" className={`${styles.imgCard} reveal`} />
                 <div className={`${styles.cardText} reveal`}>
@@ -99,9 +105,11 @@ const Introducing = () => {
                   </div>
                 </div>
               </div>
+              </Link>
             </div>
 
             <div className={`${styles.card} reveal`}>
+              <Link to='/Integrate'>
               <div className={`${styles.cardContent} reveal`}>
                 <img src={Robo} alt="" className={`${styles.imgCard} reveal`} />
                 <div className={`${styles.cardText} reveal`}>
@@ -110,10 +118,10 @@ const Introducing = () => {
                   <div className={styles.btnCardWrapper}>
                   {/* <Black>Saiba mais</Black> */}
                   <ArrowRight className={styles.arrow2}></ArrowRight>
-
                   </div>
                 </div>
               </div>
+              </Link>
             </div>
 
           </div>

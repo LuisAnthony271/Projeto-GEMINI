@@ -1,12 +1,12 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom' 
 import './App.css'
-import Header from './components/header/header'
-import Hero from './components/hero/hero'
-import Introducing from './components/introducing/introducing'
-import Footer from './components/footer/footer'
-import Technologies from './components/tech/tech'
-import Responsabilities from './components/responsabilities/rspn'
-import Method from './components/Method/Method'
-import News from './components/news/news'
+import Home from './components/pages/home'
+import AboutPage from './components/pages/about-gemini'
+import LearnPage from './components/pages/learn-gemini'
+import AssistentGemini from './components/pages/assistent-gemini'
+import IntegrateGemini from './components/pages/integrate-gemini'
+import CreateContentGemini from './components/pages/createContent-gemini'
+
 
 
 function App() {
@@ -14,14 +14,16 @@ function App() {
 
   return (
     <>
-      <Header />
-      <Hero />
-      <Introducing />
-      <Method />
-      <Technologies />
-      <News />
-      <Responsabilities/>
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/About' element={<AboutPage />} />
+          <Route path='/Learn' element={<LearnPage />} />
+          <Route path='/Assistente' element={<AssistentGemini />} />
+          <Route path='/Integrate' element={<IntegrateGemini />} />
+          <Route path='/Create' element={<CreateContentGemini />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
