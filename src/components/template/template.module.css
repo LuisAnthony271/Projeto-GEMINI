@@ -1,0 +1,38 @@
+.templateWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 5rem;
+    max-width: var(--max-width);
+    padding: 10rem 3rem;}
+
+.templateWrapper h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 1.5;
+    max-width: 30ch;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.templateWrapper p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: justify;
+    max-width: 70ch;
+    font-weight: 300;
+}
+
+@media (max-width: 900px) {
+    .templateWrapper h2 {
+        font-size: 2rem;
+        padding: 1rem 0
+    }
+
+    .templateWrapper p {
+        font-size: 1rem;
+    }
+}

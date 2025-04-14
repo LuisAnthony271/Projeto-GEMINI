@@ -1,0 +1,5 @@
+{
+    "newrites": [
+        {"source": "/(.*)", "destination":"/"}
+    ]
+}
