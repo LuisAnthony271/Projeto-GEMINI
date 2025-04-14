@@ -23,3 +23,9 @@
     text-align: justify;
     max-width: 70ch;
 }
+
+@media (max-width: 900px) {
+    .learnWrapper h2 {
+        font-size: 1.75rem;
+    }
+}
