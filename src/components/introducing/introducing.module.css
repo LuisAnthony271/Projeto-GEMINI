@@ -102,43 +102,48 @@
 
 .card {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background: var(--darkGray);
-    /* border: 1px solid var(--gray); */
     border-radius: 15px;
     height: auto;
-    transition: var(--transition);
-    transform: scale(0.9);
-    position: relative;
-    /* z-index: 1; */
+    cursor: pointer;
+    animation: gradientMove 5s ease infinite;
+    transition: background-position 0.5s ease, background-size 0.5s ease, background-image 0.5s ease;
+    /* transition: 0.5s ease-in-out; */
 }
-/* .card::before:hover {
-    position: absolute;
-    content: '';
-    height: 680px;
-    width: 100%;
-    background: var(--blue);
-    top: 0;
-    left: 0;
-    filter: blur(60px);
-    opacity: 60%;
-    z-index: -4;
-} */
+
 
 .card:hover {
-    /* border: 1px solid var(--blue); */
-    cursor: pointer;
+    
+    background: linear-gradient(-45deg, var(--darkblue), var(--mediumBlue), var(--darkblue), var(--mediumBlue), var(--darkblue), var(--darkblue));
+    background-size: 400% 400%;
+    transition: background-position 0.5s ease, background-size 0.5s ease;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .cardContent {
     width: 100%;
     display: flex;
+    flex: 1;
     flex-direction: column;
-    background: var(--darkGray);
     border-radius: 15px;
     gap: 2rem;
+    padding: .5rem;
+    transition: var(--transition);
 }
 
 .imgCard {
@@ -160,7 +165,7 @@
     /* justify-content: center; */
     /* align-items: center; */
     gap: 2rem;
-    padding: 0 2rem 3rem;
+    padding: 0 2rem;
 }
 
 .btnCardWrapper {
@@ -180,9 +185,45 @@
     max-width: 40ch;
     font-weight: 300;
     font-size: 18px;
-    text-align: justify;
     letter-spacing: .3px;
 }
+
+.arrow  {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+    opacity: 1;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    color: var(--white);
+    transform: scale(1.5);
+  }
+
+  .arrow2 {
+    position: absolute;
+    top: 165px;
+    bottom: 16px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+    opacity: 1;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    color: var(--white);
+    transform: scale(1.5);
+  }
+  
+  .arrow:hover {
+    transform: translateX(4px);
+    color: var(--lightblue);
+  }
+
+  .arrow2:hover {
+    transform: translateX(4px);
+    color: var(--lightblue);
+  }
 
 @media(max-width:1200px) {
 

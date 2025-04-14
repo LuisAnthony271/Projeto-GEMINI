@@ -5,10 +5,11 @@
   --lightGray: #dfdede;
   --gray: #9aa0a6;
   --darkblue: #0e1f52;
+  --mediumBlue: #0e3f7e;
   --blue: #1a73e8;
   --lightblue: #afcdfa;
   --font: "DM Sans", sans serif;
-  --transition: 0.2s all ease-in-out;
+  --transition: 0.3s ease-in-out;
   --transform: scale(1.1);
   --smothing: antialiased;
   --max-width: 1280px;
@@ -66,26 +67,20 @@ button, img, a, div {
   transform: translateY(0);
 }
 
-/* @media(max-width:600px) {
+/* @media(max-width:700px) {
   body {
-    max-width: 500px;
+    min-width: 700px;
   }
 } */
 
 @media(max-width:400px) {
-  body, section, header, footer {
-    /* max-width: 400px; */
-    display: flex;
-    flex-direction: column;
-    /* margin: 0 auto; */
+  body {
+    min-width: 0px;
   }
 }
 
 @media(max-width:300px) {
-  body, section, header, footer {
-    /* max-width: 300px; */
-    display: flex;
-    flex-direction: column;
-    /* margin: 0 auto; */
+  body {
+    min-width: 0px;
   }
 }

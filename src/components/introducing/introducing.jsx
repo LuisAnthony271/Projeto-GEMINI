@@ -6,6 +6,7 @@ import Content from '../../assets/content-creation.jpg'
 import Robo from '../../assets/robo.webp'
 import BackgroundGemini from '../../assets/gemini-bg-4.png'
 import { useEffect } from 'react';
+import { ArrowRight } from "lucide-react";
 
 
 const Introducing = () => {
@@ -45,6 +46,7 @@ const Introducing = () => {
   return (
     <section className={`${styles.introducing} reveal`}>
       <div className={styles.backgroundWrapper}>
+      <div className={styles.glow}></div>
         <img src={BackgroundGemini} alt="background" className={`${styles.introBackground} reveal`} />
       </div>
       <div className={`${styles.introWrapper} reveal`}>
@@ -73,10 +75,11 @@ const Introducing = () => {
               <div className={`${styles.cardContent} reveal`}>
                 <img src={Personal} alt="" className={`${styles.imgCard} reveal`} />
                 <div className={`${styles.cardText} reveal`}>
-                  <h3 className={`${styles.h3Card} reveal`}>Assitente pessoal</h3>
-                  <p className={`${styles.pCard} reveal`}>Responder perguntas complexas, fornecer resumos, ajudar na escrita de e-mails e documentos, traduzir idiomas em tempo real, planejar viagens e eventos.</p>
+                  <h3 className={styles.h3Card}>Assitente pessoal</h3>
+                  <p className={styles.pCard}>Responder perguntas complexas, fornecer resumos, ajudar na escrita de e-mails e documentos, traduzir idiomas em tempo real, planejar viagens e eventos.</p>
                   <div className={styles.btnCardWrapper}>
-                  <Black>Saiba mais</Black>
+                  {/* <Black>Saiba mais</Black> */}
+                  <ArrowRight className={styles.arrow}></ArrowRight>
 
                   </div>
                 </div>
@@ -87,10 +90,11 @@ const Introducing = () => {
               <div className={`${styles.cardContent} reveal`}>
                 <img src={Content} alt="" className={`${styles.imgCard} reveal`} />
                 <div className={`${styles.cardText} reveal`}>
-                  <h3 className={`${styles.h3Card} reveal`}>Criação de conteúdo</h3>
-                  <p className={`${styles.pCard} reveal`}>Gerar textos criativos, como poemas, roteiros e peças musicais, criar legendas para redes sociais, auxiliar no brainstorming de ideias.</p>
+                  <h3 className={styles.h3Card}>Criação de conteúdo</h3>
+                  <p className={styles.pCard}>Gerar textos criativos, como poemas, roteiros e peças musicais, criar legendas para redes sociais, auxiliar no brainstorming de ideias.</p>
                   <div className={styles.btnCardWrapper}>
-                  <Black>Saiba mais</Black>
+                  {/* <Black>Saiba mais</Black> */}
+                  <ArrowRight className={styles.arrow2}></ArrowRight>
 
                   </div>
                 </div>
@@ -101,10 +105,11 @@ const Introducing = () => {
               <div className={`${styles.cardContent} reveal`}>
                 <img src={Robo} alt="" className={`${styles.imgCard} reveal`} />
                 <div className={`${styles.cardText} reveal`}>
-                  <h3 className={`${styles.h3Card} reveal`}>Integração</h3>
-                  <p className={`${styles.pCard} reveal`}>Integrar o Gemini em sistemas robóticos para permitir um entendimento mais rico do ambiente e uma interação mais natural com humanos.</p>
+                  <h3 className={styles.h3Card}>Integração</h3>
+                  <p className={styles.pCard}>Integrar o Gemini em sistemas robóticos para permitir um entendimento mais rico do ambiente e uma interação mais natural com humanos.</p>
                   <div className={styles.btnCardWrapper}>
-                  <Black>Saiba mais</Black>
+                  {/* <Black>Saiba mais</Black> */}
+                  <ArrowRight className={styles.arrow2}></ArrowRight>
 
                   </div>
                 </div>

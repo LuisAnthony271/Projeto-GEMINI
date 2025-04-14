@@ -73,6 +73,11 @@
 }
 
 @media(max-width:800px) {
+
+    .hero .logoHero {
+        max-width: 500px;
+    }
+   
     .btnHero {
         flex-direction: column;
     }
@@ -116,9 +121,25 @@
     }
 }
 
-@media(max-width:300px) {
+@media(max-width:500px) {
+
+    .hero .logoHero {
+        max-width: 300px;
+    }
+
     .hero {
         min-width: 300px;
+    }
+}
+
+@media(max-width:300px) {
+
+    .hero .logoHero {
+        max-width: 200px;
+    }
+
+    .hero {
+        min-width: 0px;
     }
 }
 

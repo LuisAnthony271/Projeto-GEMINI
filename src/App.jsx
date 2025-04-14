@@ -6,6 +6,7 @@ import Footer from './components/footer/footer'
 import Technologies from './components/tech/tech'
 import Responsabilities from './components/responsabilities/rspn'
 import Method from './components/Method/Method'
+import News from './components/news/news'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Introducing />
       <Method />
       <Technologies />
+      <News />
       <Responsabilities/>
       <Footer />
     </>
