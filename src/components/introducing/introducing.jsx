@@ -79,7 +79,7 @@ const Introducing = () => {
               <div className={`${styles.cardContent} reveal`}>
                 <img src={Personal} alt="" className={`${styles.imgCard} reveal`} />
                 <div className={`${styles.cardText} reveal`}>
-                  <h3 className={styles.h3Card}>Assitente pessoal</h3>
+                  <h3 className={styles.h3Card}>Assistente pessoal</h3>
                   <p className={styles.pCard}>Responder perguntas complexas, fornecer resumos, ajudar na escrita de e-mails e documentos, traduzir idiomas em tempo real, planejar viagens e eventos.</p>
                   <div className={styles.btnCardWrapper}>
                   {/* <Black>Saiba mais</Black> */}
