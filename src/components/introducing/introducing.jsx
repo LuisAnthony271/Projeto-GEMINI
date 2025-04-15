@@ -65,7 +65,7 @@ const Introducing = () => {
 
         {/* Botão */}
         <div className={`${styles.btnIntro} reveal`}>
-          <Link to={'/About'} target="_blank">
+          <Link to={'/About'}>
             <Black>Saiba Mais</Black>
           </Link>
         </div>
