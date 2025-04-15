@@ -26,7 +26,7 @@ const Footer = () => {
               />
             </a>
 
-            <a href="https://github.com/google-gemini" target="_blank" rel="noopener noreferrer" className={styles.aFooter}>
+            <a className={styles.aFooter}>
               <img
                 src={Github}
                 alt="Github-logo"
