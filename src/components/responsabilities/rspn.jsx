@@ -38,7 +38,7 @@ const Responsabilities = () => {
   }, [isMobile]);
 
   return (
-    <section className={withReveal(styles.Rspn)}>
+    <section className={withReveal(styles.Rspn)} id="rspn">
       <div className={withReveal(styles.wrapperRspn)}>
         <div className={withReveal(styles.rspnContainer)}>
           <h2 className="reveal">Responsabilidade</h2>

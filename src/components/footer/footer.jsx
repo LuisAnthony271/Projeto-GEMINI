@@ -14,11 +14,11 @@ const Footer = () => {
           <div className={styles.followUs}>
             <h4 className={styles.h4}>Siga-nos</h4>
 
-            <a href="#" className={styles.aFooter}>
+            <a href="https://x.com/google/status/1732421837026369943" target="_blank" rel="noopener noreferrer" className={styles.aFooter}>
               <img src={X} alt="X-logo" className={styles.socialMedia} />
             </a>
 
-            <a href="#" className={styles.aFooter}>
+            <a href="https://www.instagram.com/googlegemini/" target="_blank" rel="noopener noreferrer" className={styles.aFooter}>
               <img
                 src={Insta}
                 alt="insta-logo"
@@ -26,7 +26,7 @@ const Footer = () => {
               />
             </a>
 
-            <a href="#" className={styles.aFooter}>
+            <a href="https://github.com/google-gemini" target="_blank" rel="noopener noreferrer" className={styles.aFooter}>
               <img
                 src={Github}
                 alt="Github-logo"
@@ -41,7 +41,7 @@ const Footer = () => {
               />
             </a> */}
 
-            <a href="#" className={styles.aFooter}>
+            <a href="https://www.linkedin.com/company/gemini-generative-ai" target="_blank" rel="noopener noreferrer" className={styles.aFooter}>
               <img
                 src={Linkedin}
                 alt="Linkedin-logo"

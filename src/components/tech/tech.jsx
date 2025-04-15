@@ -47,7 +47,7 @@ const Technologies = () => {
     const withReveal = (className) => `${className} reveal`;
   
     return (
-      <section className={withReveal(styles.techSection)}>
+      <section className={withReveal(styles.techSection)} id="tech">
         <div className={withReveal(styles.wrapperTech)}>
           <div className={withReveal(styles.techContainer)}>
             <h2 className={withReveal(styles.techTitle) + ' ' + styles.reveal}>Tecnologias</h2>

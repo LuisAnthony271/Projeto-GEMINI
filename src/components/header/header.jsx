@@ -6,6 +6,7 @@ import iconBars from "../../assets/menu-togle.svg";
 // import Background from '../../assets/background1-1.png'
 import { Search } from "lucide-react";
 import { Sparkle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -18,7 +19,9 @@ const Header = () => {
     <header className={`${styles.Header} ${menuActive ? styles.active : ""}`}>
       <div className={styles.wrapperHeader}>
         <div className={styles.logoHeader}>
-          <img src={LogoHeader} alt="" />
+          <Link to="/">
+            <img src={LogoHeader} alt="" />
+          </Link>         
         </div>
         <button onClick={toggleMenu} id={styles.buttonMobile}>
           <img
@@ -30,16 +33,19 @@ const Header = () => {
         <nav className={menuActive ? styles.active: ""}>  
           <ul className={styles.ulMenu}>
             <li>
-              <a href="">Sobre</a>
+              <a href={"#method"}>Método de aprendizado</a>
             </li>
             <li>
-              <a href="">Documentação</a>
+              <a href={"#introducing"}>Introdução</a>
             </li>
             <li>
-              <a href="">Tecnologias</a>
+              <a href={"#tech"}>Tecnologias</a>
             </li>
             <li>
-              <a href="">Descubra</a>
+              <a href={"#news"}>Últimas noticias</a>
+            </li>
+            <li>
+              <a href={"#rspn"}>Responsabilidade</a>
             </li>
           <div className={styles.iconsHeader}>
             <a href="">

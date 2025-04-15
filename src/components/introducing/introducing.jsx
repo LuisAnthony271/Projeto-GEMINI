@@ -45,7 +45,7 @@ const Introducing = () => {
   }, );
 
   return (
-    <section className={`${styles.introducing} reveal`}>
+    <section className={`${styles.introducing} reveal`} id="introducing">
       <div className={styles.backgroundWrapper}>
       <div className={styles.glow}></div>
         <img src={BackgroundGemini} alt="background" className={`${styles.introBackground} reveal`} />
@@ -65,7 +65,7 @@ const Introducing = () => {
 
         {/* Botão */}
         <div className={`${styles.btnIntro} reveal`}>
-          <Link to={'/About'}>
+          <Link to={'/About'} target="_blank">
             <Black>Saiba Mais</Black>
           </Link>
         </div>

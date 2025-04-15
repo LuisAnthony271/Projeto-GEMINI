@@ -43,7 +43,7 @@ const News = () => {
     const withReveal = (className) => `${className} reveal`;
   
     return (
-      <section className={withReveal(styles.news)}>
+      <section className={withReveal(styles.news)} id="news">
         <img className={styles.hand} src={Hand} alt="" />
         <div className={withReveal(styles.newsWrapper)}>
           <div className={withReveal(styles.newsContent)}>

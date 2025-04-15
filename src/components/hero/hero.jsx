@@ -35,7 +35,7 @@ const Hero = () => {
   }, );
 
   return (
-    <section className={`${styles.hero} reveal`}>
+    <section className={`${styles.hero} reveal`} id="hero">
   <img src={Background} alt="background-img" className={styles.heroImg} />
   <div className={`${styles.heroWrapper} reveal`}>
     <div className={`${styles.heroContent} reveal`}>
@@ -44,8 +44,8 @@ const Hero = () => {
         Nossos modelos de IA mais inteligentes, desenvolvidos para a era dos agentes
       </p>
       <div className={`${styles.btnHero} reveal`}>
-        <Blue> Bater papo com o Gemini ❯ </Blue>
-        <Black> experimente o Google IA Studio ❯ </Black>
+        <Blue href="https://gemini.google.com/app?hl=pt-BR" target="_blank" rel="noopener noreferrer"> Bater papo com o Gemini ❯ </Blue>
+        <Black href="https://aistudio.google.com/prompts/new_chat" target="_blank" rel="noopener noreferrer"> experimente o Google IA Studio ❯ </Black>
       </div>
       <div className={`${styles.btnHeroMobile} reveal`}>
         <Blue> Gemini ❯ </Blue>

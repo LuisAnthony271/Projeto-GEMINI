@@ -43,7 +43,7 @@ export default function Method() {
 
       return (
         <section className={style.method}>
-          <div className={withReveal(style.section)}>
+          <div className={withReveal(style.section)} id="method">
             <div className={style.backgroundWrapper}>
               <img src={Robot} alt="" className={withReveal (style.backgroundImg)} />
             </div>
