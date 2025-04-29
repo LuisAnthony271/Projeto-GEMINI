@@ -47,12 +47,12 @@ const Header = () => {
             <li>
               <a href={"#rspn"}>Responsabilidade</a>
             </li>
-          <div className={styles.iconsHeader}>
-            <a href="">
-              <Search />
-            </a>
-            <a href="">
-              <Sparkle />
+            <div className={styles.iconsHeader}>
+              <a href="">
+                <Search />
+              </a>
+              <a href="">
+                <Sparkle />
             </a>
           </div>
           </ul>
@@ -61,7 +61,7 @@ const Header = () => {
           <a href="">
               <Search />
             </a>
-            <a href="">
+            <a href="https://gemini.google.com/app?hl=pt-BR" target="_blank" rel="noopenreferrer">
               <Sparkle />
             </a>
           </div>

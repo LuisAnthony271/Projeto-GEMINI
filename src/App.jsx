@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom' 
 import './App.css'
+import { ScrollToTop } from './scrollToTop'
 import Home from './components/pages/home'
 import AboutPage from './components/pages/about-gemini'
 import LearnPage from './components/pages/learn-gemini'
@@ -15,14 +16,15 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/About' element={<AboutPage />} />
-          <Route path='/Learn' element={<LearnPage />} />
-          <Route path='/Assistente' element={<AssistentGemini />} />
-          <Route path='/Integrate' element={<IntegrateGemini />} />
-          <Route path='/Create' element={<CreateContentGemini />} />
-        </Routes>
+        <ScrollToTop />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/About' element={<AboutPage />} />
+            <Route path='/Learn' element={<LearnPage />} />
+            <Route path='/Assistente' element={<AssistentGemini />} />
+            <Route path='/Integrate' element={<IntegrateGemini />} />
+            <Route path='/Create' element={<CreateContentGemini />} />
+          </Routes>
       </BrowserRouter>
     </>
   )

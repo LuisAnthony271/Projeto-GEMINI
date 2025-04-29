@@ -44,7 +44,9 @@ const News = () => {
   
     return (
       <section className={withReveal(styles.news)} id="news">
+
         <img className={styles.hand} src={Hand} alt="" />
+
         <div className={withReveal(styles.newsWrapper)}>
           <div className={withReveal(styles.newsContent)}>
             <h2 className={styles.h2News}>Ultimas noticias</h2>
@@ -58,13 +60,13 @@ const News = () => {
                 <h3 className={withReveal(styles.h3Card)}>
                   Gemini 2.5: <span className={withReveal(styles.spanCard)}>O nosso modelo de IA mais inteligente</span>
                 </h3>
-                <p className={styles.pCard1}>
+                <p className={withReveal(styles.pCard1)}>
                   O Gemini 2.5 Pro Experimental apresenta raciocínio aprimorado e melhor desempenho em tarefas complexas como programação, matemática e compreensão de imagens.Esta versão experimental está disponível no aplicativo Gemini para web e dispositivos móveis, e para planos Business e Education qualificados do Google Workspace.
                   O Google enfatiza que este é um pré-lançamento e o modelo experimental pode apresentar comportamentos inesperados e erros.
                 </p>
               </a>
               <a href="" className="">
-                <ArrowRight className={styles.cardArrow}/>
+                <ArrowRight className={withReveal(styles.cardArrow)}/>
               </a>
             </div>
   
@@ -72,12 +74,12 @@ const News = () => {
               <div className={withReveal(styles.row)}>
                 <a href="#" className={withReveal(styles.aNews)}>
                   <img src={GeminiLive} alt="gemini-live" />
-                  <h4 className={styles.h4Card}>Gemini Live</h4>
-                  <p className={styles.pRow}>
+                  <h4 className={withReveal(styles.h4Card)}>Gemini Live</h4>
+                  <p className={withReveal(styles.pRow)}>
                     A funcionalidade Gemini Live foi aprimorada, permitindo conversas multilíngues mais fluidas (suportando mais de 45 idiomas) e a capacidade de adicionar imagens, arquivos e vídeos do YouTube para discussão.
                   </p>
                   <a href="" className="">
-                    <ArrowRight className={styles.card2Arrow}/>
+                    <ArrowRight className={withReveal(styles.card2Arrow)}/>
                   </a>
                 </a>
 
@@ -85,12 +87,12 @@ const News = () => {
               <div className={withReveal(styles.row)}>
                 <a href="#" className={withReveal(styles.aNews)}>
                   <img src={Terminator} alt="terminator" />
-                  <h4 className={styles.h4Card}>Qual será o futuro das IAs?</h4>
-                  <p className={styles.pRow2}>
+                  <h4 className={withReveal(styles.h4Card)}>Qual será o futuro das IAs?</h4>
+                  <p className={withReveal(styles.pRow2)}>
                     Conforme o tempo passa, as IAs se tornam cada vez mais inteligentes, e isso significa que o futuro das IAs parece estar se tornando cada vez mais complexo e desafiador.
                   </p>
                     <a href="" className="">
-                        <ArrowRight className={styles.card2Arrow}/>
+                        <ArrowRight className={withReveal(styles.card2Arrow)}/>
                     </a>
                 </a>
               </div>

@@ -69,7 +69,8 @@
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(22, 22, 22, 0.4);
   position: relative;
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.1s ease;
+  cursor: pointer;
 }
 
 .cardWrapper p {
@@ -79,8 +80,9 @@
 }
 
 .cardWrapper:hover {
-  transition: var(--transition);
-  box-shadow: 0 6px 20px rgba(224, 224, 224, 0.6);
+  transition: 0.1s;
+  box-shadow: 0 6px 20px var(--lightblue);
+  border-color: var(--lightblue);
 }
 
 .imgCard img {

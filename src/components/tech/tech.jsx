@@ -8,6 +8,7 @@ import VeoImg from "../../assets/ulOZK86B4c7sXPcUnDlSQURFolyMa-8X.jpg";
 import AstraImg from "../../assets/iEpy3slnpRTE00a-mmISpLyQdzQGbY4C.jpg";
 import MarinerImg from "../../assets/screenshot 2.jpg";
 import { useEffect } from 'react';
+import Black from '../btnBlack/black';
 
 const Technologies = () => {
 
@@ -54,7 +55,7 @@ const Technologies = () => {
             <p className={withReveal(styles.techDescription) + ' ' + styles.reveal}>Pesquisa inovadora. Produtos transformadores.</p>
           </div>
           <div className={withReveal(styles.btnTech)}>
-            <a href="" className={withReveal(styles.btnBlack) + ' ' + styles.reveal}>Ver Todas as Tecnologias</a>
+            {/* <a href="" className={withReveal(styles.btnBlack) + ' ' + styles.reveal}>Ver Todas as Tecnologias</a> */}
           </div>
           <div className={withReveal(styles.techCardContainer)}>
             <div className={withReveal(styles.Row)}>
