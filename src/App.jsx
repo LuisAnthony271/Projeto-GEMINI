@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom' 
 import './App.css'
-import { ScrollToTop } from './scrollToTop'
+import { ScrollToTop } from './components/pages/scrollToTop'
 import Home from './components/pages/home'
 import AboutPage from './components/pages/about-gemini'
 import LearnPage from './components/pages/learn-gemini'
