@@ -85,7 +85,7 @@ const Learn = () => {
               <p className={withReveal(styles.paragraph)}>
               4. Escala Massiva:
 
-              Um fator crucial para o desempenho do Gemini é a escala do treinamento. Isso envolve:
+              Um fator crucial para o desempenho do Gemini é a escala do treinamento. Isso envolve: <br />
               Grandes Conjuntos de Dados: Quanto mais dados diversificados o modelo vê, melhor ele generaliza e aprende representações robustas.
               Modelos com Muitos Parâmetros: O Gemini possui um número enorme de parâmetros (as "conexões" dentro da rede neural), permitindo que ele armazene e processe grandes quantidades de informação.
               Infraestrutura Computacional Poderosa: Treinar modelos dessa escala requer uma enorme quantidade de poder computacional, geralmente utilizando milhares de GPUs ou TPUs (Tensor Processing Units) em paralelo.<br /> <br />
