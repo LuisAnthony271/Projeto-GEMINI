@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../App.css'
 import Header from '../header/header'
-import Integrate from '../integrate/integrate'
+import Integrate from '../routes/integrate/integrate'
 import Footer from '../footer/footer'
 
 const IntegrateGemini = () => {

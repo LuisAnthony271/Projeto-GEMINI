@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../App.css'
 import Header from '../header/header'
-import Learn from '../LearnPage/learn'
+import Learn from '../routes/LearnPage/learn'
 import Footer from '../footer/footer'
 
 

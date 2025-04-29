@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../App.css'
 import Header from '../header/header'
-import CreateContent from '../createContent/createContent'
+import CreateContent from '../routes/createContent/createContent'
 import Footer from '../footer/footer'
 
 const CreateContentGemini = () => {
