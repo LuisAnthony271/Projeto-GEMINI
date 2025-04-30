@@ -1,14 +1,14 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 
-const Reveal = ({ children, className = '' }) => {
-  const ref = useRef(null);
-
+const useRevealObserver = () => {
   useEffect(() => {
     const isMobile = window.matchMedia("(max-width: 600px)").matches;
 
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, index) => {
+      entries.forEach((entry) => {
         const target = entry.target;
+        const siblings = Array.from(document.querySelectorAll('.reveal'));
+        const index = siblings.indexOf(target);
 
         if (entry.isIntersecting) {
           target.style.transitionDelay = `${index * 100}ms`;
@@ -25,23 +25,16 @@ const Reveal = ({ children, className = '' }) => {
       rootMargin: isMobile ? "0px 0px -15% 0px" : "0px 0px -10% 0px",
     });
 
-    const element = ref.current;
-    if (element) {
-      observer.observe(element);
-    }
+    const reveals = document.querySelectorAll('.reveal');
+    reveals.forEach((reveal) => observer.observe(reveal));
 
     return () => {
-      if (element) {
-        observer.unobserve(element);
-      }
+      reveals.forEach((reveal) => observer.unobserve(reveal));
     };
   }, []);
-
-  return (
-    <div ref={ref} className={`reveal inactive ${className}`}>
-      {children}
-    </div>
-  );
 };
 
-export default Reveal;
+export default useRevealObserver;
+
+
+    

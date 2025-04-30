@@ -31,9 +31,9 @@
   border: none;
   border-radius: 50px;
   align-content: center;
-  padding: 7px 1rem 7px;
-  font-size: 1.10rem;
-  font-weight: 400;
+  padding: 1rem 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
   letter-spacing: 0.25px;
   color: var(--white);
   z-index: 1;

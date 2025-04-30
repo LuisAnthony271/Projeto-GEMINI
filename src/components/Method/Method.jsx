@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import Robot from '../../assets/robot_IA.png'
 import Button from '../btnBlack/black';
 import { Link } from 'react-router-dom';
+
 export default function Method() {
 
   const isMobile = window.matchMedia("(max-width: 600px)").matches;
@@ -45,7 +46,7 @@ export default function Method() {
         <section className={style.method}>
           <div className={withReveal(style.section)} id="method">
             <div className={style.backgroundWrapper}>
-              <img src={Robot} alt="" className={withReveal (style.backgroundImg)} />
+              <img src={Robot} alt="" className={style.backgroundImg} />
             </div>
             <div className={withReveal(style.boxText)}>
               <h4 className={withReveal("")}>
