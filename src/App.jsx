@@ -12,6 +12,9 @@ import ImagenPage from './components/pages/imagen-gemini'
 import VeoPage from './components/pages/Veo-gemini'
 import ProjetoAstra from './components/pages/projetoAstra-gemini'
 import ProjetoMariner from './components/pages/projetoMariner-gemini'
+import Gemini25 from './components/pages/gemini25-gemini'
+import GeminiLive from './components/pages/geminiLive-gemini'
+import FuturoIA from './components/pages/futuroIA-gemini'
 
 function App() {
 
@@ -32,6 +35,9 @@ function App() {
             <Route path='/Veo' element={<VeoPage />} />
             <Route path='/ProjetoAstra' element={<ProjetoAstra/>} />
             <Route path='/ProjetoMariner' element={<ProjetoMariner/>} />
+            <Route path='/Gemini2.5' element={<Gemini25/>} />
+            <Route path='/GeminiLive' element={<GeminiLive/>} />
+            <Route path='/futuroIA' element={<FuturoIA />} />
           </Routes>
       </BrowserRouter>
     </>

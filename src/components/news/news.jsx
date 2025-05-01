@@ -6,6 +6,7 @@ import GeminiLive from '../../assets/gemini-live.png'
 import Terminator from '../../assets/terminator-schwazenegger.jpg'
 import Hand from '../../assets/hand-AI.png'
 import { ArrowRight } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 
 const News = () => {
@@ -44,16 +45,19 @@ const News = () => {
   
     return (
       <section className={withReveal(styles.news)} id="news">
-
+        {/* BACKGROUND */}
         <img className={styles.hand} src={Hand} alt="" />
 
-        <div className={withReveal(styles.newsWrapper)}>
-          <div className={withReveal(styles.newsContent)}>
+        <div className={withReveal(styles.newsWrapper)}> {/* WRAPPER */}
+            <div className={withReveal(styles.newsContent)}> 
             <h2 className={styles.h2News}>Ultimas noticias</h2>
             <p className={styles.pNews}>Saiba tudo sobre nossas ultimas atualizações e inovações</p>  
           </div>
-  
+          {/* CARDS */}
           <div className={withReveal(styles.cardWrapper)}>
+
+          {/* CARD 1 - GEMINI 2.5 */}
+          <Link to='/Gemini2.5'>
             <div className={withReveal(styles.card1)}>
               <a href="#" className={withReveal(styles.aNews)}>
                 <img src={NewGemini} alt="gemini-2.5" />
@@ -69,8 +73,11 @@ const News = () => {
                 <ArrowRight className={withReveal(styles.cardArrow)}/>
               </a>
             </div>
-  
+          </Link>
+          {/* ROW Cards2 */}
             <div className={withReveal(styles.card2)}>
+            {/* CARD2 row - GEMINI LIVE */}
+            <Link to='/GeminiLive'>
               <div className={withReveal(styles.row)}>
                 <a href="#" className={withReveal(styles.aNews)}>
                   <img src={GeminiLive} alt="gemini-live" />
@@ -82,8 +89,10 @@ const News = () => {
                     <ArrowRight className={withReveal(styles.card2Arrow)}/>
                   </a>
                 </a>
-
               </div>
+            </Link>
+              {/* CARD 3 row - FUTURO DAS IAs */}
+              <Link to='/FuturoIA'>
               <div className={withReveal(styles.row)}>
                 <a href="#" className={withReveal(styles.aNews)}>
                   <img src={Terminator} alt="terminator" />
@@ -96,6 +105,7 @@ const News = () => {
                     </a>
                 </a>
               </div>
+              </Link>
 
             </div>
           </div>

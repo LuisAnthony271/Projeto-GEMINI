@@ -44,43 +44,61 @@ const Responsabilities = () => {
           <h2 className="reveal">Responsabilidade</h2>
           <p className="reveal">
             Queremos que a IA beneficie o mundo, por isso
-            <br /> devemos ser cuidadosos sobre como ela é <br /> construída e usada.
+            <br /> devemos ser cuidadosos sobre como ela é <br /> construída e
+            usada.
           </p>
         </div>
         <div className={withReveal(styles.RspnCards)}>
           {/* Card 1 */}
-          <div className={withReveal(styles.cardWrapper)}>
-            <div className={withReveal(styles.imgCard)}>
-              <img src={Trail} alt="Responsabilidade e Segurança" className="reveal" />
+          <a
+            href="https://deepmind.google/about/responsibility-safety/"
+            rel="noopener noreferrer"
+            target="blank"
+          >
+            <div className={withReveal(styles.cardWrapper)}>
+              <div className={withReveal(styles.imgCard)}>
+                <img
+                  src={Trail}
+                  alt="Responsabilidade e Segurança"
+                  className="reveal"
+                />
+              </div>
+              <div className={withReveal(styles.cardContent)}>
+                <h2 className="reveal">Responsabilidade e Segurança</h2>
+                <p className="reveal">
+                  A IA pode fornecer benefícios extraordinários, mas, como toda
+                  tecnologia transformacional, pode ter impactos negativos.
+                </p>
+              </div>
+              <div className={withReveal(styles.arrowIcon)}>
+                <ArrowRight />
+              </div>
             </div>
-            <div className={withReveal(styles.cardContent)}>
-              <h2 className="reveal">Responsabilidade e Segurança</h2>
-              <p className="reveal">
-                A IA pode fornecer benefícios extraordinários, mas, como toda tecnologia
-                transformacional, pode ter impactos negativos.
-              </p>
-            </div>
-            <div className={withReveal(styles.arrowIcon)}>
-              <ArrowRight />
-            </div>
-          </div>
+          </a>
 
           {/* Card 2 */}
-          <div className={withReveal(styles.cardWrapper)}>
-            <div className={withReveal(styles.imgCard)}>
-              <img src={Lines} alt="Princípios de IA" className="reveal" />
+          <a
+            href="https://blog.google/technology/ai/ai-principles/"
+            rel="noopener noreferrer"
+            target="blank"
+          >
+            <div className={withReveal(styles.cardWrapper)}>
+              <div className={withReveal(styles.imgCard)}>
+                <img src={Lines} alt="Princípios de IA" className="reveal" />
+              </div>
+              <div className={withReveal(styles.cardContent)}>
+                <h2 className="reveal">Princípios de IA</h2>
+                <p className="reveal">
+                  Embora estejamos otimistas sobre o potencial da IA,
+                  reconhecemos que as tecnologias avançadas podem levantar
+                  desafios importantes.
+                </p>
+              </div>
+              <div className={withReveal(styles.SquareArrowIcon)}>
+                <SquareArrowOutUpRight />
+              </div>
             </div>
-            <div className={withReveal(styles.cardContent)}>
-              <h2 className="reveal">Princípios de IA</h2>
-              <p className="reveal">
-                Embora estejamos otimistas sobre o potencial da IA, reconhecemos que as
-                tecnologias avançadas podem levantar desafios importantes.
-              </p>
-            </div>
-            <div className={withReveal(styles.SquareArrowIcon)}>
-              <SquareArrowOutUpRight />
-            </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>

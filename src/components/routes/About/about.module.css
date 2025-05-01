@@ -8,6 +8,8 @@
     z-index: -1;
 }
 
+
+
 .aboutContent {
     display: flex;
     flex-direction: column;
@@ -18,7 +20,6 @@
     max-width: var(--max-width);
     position: relative;
     padding: 10rem 3rem;
-
 }
 
 .aboutWrapper h2 {
@@ -36,6 +37,20 @@
     text-align: justify;
     max-width: 85ch;
     font-weight: 300;
+}
+
+.videoWrapper {
+    display: flex;
+    align-items: center;
+    max-width: 1280px;
+    background-color: var(--darkGray);
+    padding: .8rem;
+    border-radius: 36px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.726);
+}
+
+.video {
+    border-radius: 30px;
 }
 
 @media (max-width: 900px) {

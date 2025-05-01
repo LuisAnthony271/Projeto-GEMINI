@@ -71,6 +71,7 @@
   position: relative;
   transition: box-shadow 0.1s ease;
   cursor: pointer;
+  height: 100%;
 }
 
 .cardWrapper p {
