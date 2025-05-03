@@ -68,7 +68,7 @@ const Hero = () => {
           <div className={`${styles.btnHeroMobile} reveal`}>
             <Blue
               href="https://gemini.google.com/app?hl=pt-BR"
-              target="_blank"
+              
               rel="noopener noreferrer"
             >
               
