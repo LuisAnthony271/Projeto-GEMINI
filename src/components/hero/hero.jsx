@@ -35,26 +35,58 @@ const Hero = () => {
   }, );
 
   return (
-  <section className={`${styles.hero} reveal`} id="hero">
-    <img src={Background} alt="background-img" className={styles.heroImg} />
-    <div className={`${styles.heroWrapper} reveal`}>
-    <div className={`${styles.heroContent} reveal`}>
-      <img src={Gemini} alt="Gemini-text-logo" className={`${styles.logoHero} reveal`} />
-      <p className={`${styles.pHero} reveal`}>
-        Nossos modelos de IA mais inteligentes, desenvolvidos para a era dos agentes
-      </p>
-      <div className={`${styles.btnHero} reveal`}>
-        <Blue href="https://gemini.google.com/app?hl=pt-BR" target="_blank" rel="noopener noreferrer"> Bater papo com o Gemini ❯ </Blue>
-        <Black href="https://aistudio.google.com/prompts/new_chat" target="_blank" rel="noopener noreferrer"> experimente o Google IA Studio ❯ </Black>
+    <section className={`${styles.hero} reveal`} id="hero">
+      <img src={Background} alt="background-img" className={styles.heroImg} />
+      <div className={`${styles.heroWrapper} reveal`}>
+        <div className={`${styles.heroContent} reveal`}>
+          <img
+            src={Gemini}
+            alt="Gemini-text-logo"
+            className={`${styles.logoHero} reveal`}
+          />
+          <p className={`${styles.pHero} reveal`}>
+            Nossos modelos de IA mais inteligentes, desenvolvidos para a era dos
+            agentes
+          </p>
+          <div className={`${styles.btnHero} reveal`}>
+            <Blue
+              href="https://gemini.google.com/app?hl=pt-BR"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              
+              Bater papo com o Gemini ❯
+            </Blue>
+            <Black
+              href="https://aistudio.google.com/prompts/new_chat"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              experimente o Google IA Studio ❯
+            </Black>
+          </div>
+          <div className={`${styles.btnHeroMobile} reveal`}>
+            <Blue
+              href="https://gemini.google.com/app?hl=pt-BR"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              
+              Gemini ❯
+            </Blue>
+            <Black
+              href="https://aistudio.google.com/prompts/new_chat"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              
+              Google IA Studio ❯
+            </Black>
+          </div>
+        </div>
       </div>
-      <div className={`${styles.btnHeroMobile} reveal`}>
-        <Blue> Gemini ❯ </Blue>
-        <Black> Google IA Studio ❯ </Black>
-      </div>
-    </div>
-  </div>
-</section>
-  )
+    </section>
+  );
 }
 
 export default Hero;
